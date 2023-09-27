@@ -78,9 +78,11 @@ const changeImg = (fleche) => {
 	else if (count > slider.length - 1) {
 		count = 0;
 	}
+
 	document.querySelector(".banner-img").src = srcImg + slider[count].image;
-	document.querySelector(".banner").insertAdjacentHTML = slider[count].tagLine;
-	console.log(count);
+	document.querySelector(".banner").innerHTML= slider[count].tagLine;
+	console.log(slider[count].tagLine);
+	console.log(document.querySelector(".banner"));
 	changeDot(); // appelle de la fonction chandeDot
 }
 
