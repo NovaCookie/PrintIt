@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "B:/cours/OC/Carteau_Nathan_1_Projet6_120923/Print-it-JS-main/Print-it-JS-main/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

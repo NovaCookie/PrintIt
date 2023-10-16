@@ -19,21 +19,6 @@ const slider = [
 	}
 ];
 
-/************ Test clic-alerte ************/
-/*
-const btn1 = document.querySelector(".arrow_left")
-btn1.addEventListener('click', () => {
-	const btnGauche = -1;
-	alert("clique = " + btnGauche)
-})
-
-const btn2 = document.querySelector(".arrow_right")
-btn2.addEventListener('click', () => {
-	const btnDroite = 1;
-	alert("clique = " + btnDroite)
-})
-*/
-
 /************ Test Tableau  ************/
 //const slider = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.png"];
 //[0,1,2,3,...]
@@ -47,25 +32,8 @@ const dotAll = [dot1, dot2, dot3, dot4]
 let count = 0;
 const srcImg = "assets/images/slideshow/"
 
+
 /************ Première version slider  ************/
-// const changeImg = (fleche) => {
-// 	//console.log(fleche);
-// 	count = count + fleche;
-
-// 	//Si count prend une valeur inférieur à 0 alors count prend le dernier élement du tableau
-// 	if (count < 0) {
-// 		count = slider.length - 1;
-// 	}
-// 	//si count prend une valeur supérieur au dernier élément du tableau alors count prend le premier élemen du tableau
-// 	else if (count > slider.length - 1) {
-// 		count = 0;
-// 	}
-// 	document.querySelector(".banner-img").src = srcImg + slider[count];
-// 	console.log(count);
-// 	changeDot(); // appelle de la fonction chandeDot
-// }
-
-/************ Deuxième version slider  ************/
 const changeImg = (fleche) => {
 	//console.log(fleche);
 	count = count + fleche;
@@ -134,7 +102,7 @@ const changeDot = () => {
 	}
 }
 
-/************ Troisième version bullet point (version expert bac + 22) ************/
+/************ Deuxième version bullet point ************/
 // const changeDot = () => {
 // 	dotAll.forEach(dotSelected => {
 // 		dotSelected.classList.remove('dot_selected')
